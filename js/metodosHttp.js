@@ -3,7 +3,7 @@ const getUsers = () => {
   let usersCollection;
   $.ajax({
     method: "GET",
-    url: "http://localhost:8080/users",
+    url: "https://devto-backend-app.herokuapp.com/users",
     success: (response) => {
       usersCollection = response;
     },
@@ -18,7 +18,7 @@ const getUsers = () => {
 const postUsers = (newOwner) => {
   $.ajax({
     method: "POST",
-    url: "http://localhost:8080/users",
+    url: "https://devto-backend-app.herokuapp.com/users",
     contentType : "application/json",
     data: JSON.stringify(newOwner),
     dataType : 'json',
@@ -33,7 +33,7 @@ const postUsers = (newOwner) => {
 const deleteUsers = (id) => {
   $.ajax({
     method: "DELETE",
-    url: `http://localhost:8080/users/${id}`,
+    url: `https://devto-backend-app.herokuapp.com/users/${id}`,
     success: (response) => {
       console.log(response);
     },
@@ -46,7 +46,7 @@ const deleteUsers = (id) => {
 const putUsers = (id, data) => {
   $.ajax({
     method: "PUT",
-    url: `http://localhost:8080/users/${id}.json`,
+    url: `https://devto-backend-app.herokuapp.com/users/${id}.json`,
     data: JSON.stringify(data),
     success: (response) => {
       console.log(response);
@@ -62,7 +62,7 @@ const getPosts = () => {
   let usersCollection;
   $.ajax({
     method: "GET",
-    url: "http://localhost:8080/posts",
+    url: "https://devto-backend-app.herokuapp.com/posts",
     success: (response) => {
       usersCollection = response;
     },
@@ -78,7 +78,7 @@ const getPostByKey = id => {
   let usersCollection;
   $.ajax({
     method: "GET",
-    url: `http://localhost:8080/posts/${id}`,
+    url: `https://devto-backend-app.herokuapp.com/posts/${id}`,
     success: (response) => {
       usersCollection = response;
     },
@@ -95,7 +95,7 @@ const savePost = newOwner => {
   $.ajax({
     method: "POST",
     contentType : "application/json",
-    url: "http://localhost:8080/posts",
+    url: "https://devto-backend-app.herokuapp.com/posts",
     dataType : 'json',
     data: JSON.stringify(newOwner),
     success: (response) => {
@@ -110,7 +110,7 @@ const savePost = newOwner => {
 const deletePost = id => {
   $.ajax({
     method: "DELETE",
-    url: `http://localhost:8080/posts/${id}`,
+    url: `https://devto-backend-app.herokuapp.com/posts/${id}`,
     success: (response) => {
       console.log(response);
     },
@@ -123,7 +123,7 @@ const deletePost = id => {
 const putPost = (id, data) => {
   $.ajax({
     method: "PUT",
-    url: `http://localhost:8080/posts/${id}`,
+    url: `https://devto-backend-app.herokuapp.com/posts/${id}`,
     data: JSON.stringify(data),
     success: (response) => {
       console.log(response);
@@ -140,7 +140,7 @@ const getReplies = () => {
   let repliesCollection;
   $.ajax({
     method: "GET",
-    url: "http://localhost:8080/replies",
+    url: "https://devto-backend-app.herokuapp.com/replies",
     success: (response) => {
       repliesCollection = response;
     },
@@ -156,7 +156,7 @@ const saveReply = newReply => {
   $.ajax({
     method: "POST",
     contentType : "application/json",
-    url: "http://localhost:8080/replies",
+    url: "https://devto-backend-app.herokuapp.com/replies",
     dataType : 'json',
     data: JSON.stringify(newReply),
     success: (response) => {
@@ -171,7 +171,7 @@ const saveReply = newReply => {
 const deleteReply = id => {
   $.ajax({
     method: "DELETE",
-    url: `http://localhost:8080/replies/${id}`,
+    url: `https://devto-backend-app.herokuapp.com/replies/${id}`,
     success: (response) => {
       console.log(response);
     },
@@ -184,7 +184,7 @@ const deleteReply = id => {
 const putReply = (id, data) => {
   $.ajax({
     method: "PUT",
-    url: `http://localhost:8080/replies/${id}`,
+    url: `https://devto-backend-app.herokuapp.com/replies/${id}`,
     data: JSON.stringify(data),
     success: (response) => {
       console.log(response);
@@ -201,7 +201,7 @@ const saveReaction = (newReaction)=>{
     contentType : "application/json",
     method: "POST",
     dataType : 'json',
-    url: `http://localhost:8080/reactions`,
+    url: `https://devto-backend-app.herokuapp.com/reactions`,
     data: JSON.stringify(newReaction),
     success: (response) => {
       console.log(response);
@@ -217,7 +217,7 @@ const getReactions = () =>{
   $.ajax({
     async:false,
     method: "GET",
-    url: "http://localhost:8080/reactions",
+    url: "https://devto-backend-app.herokuapp.com/reactions",
     success: (response) => {
       reactions = response;
     },
@@ -232,7 +232,7 @@ const getReactions = () =>{
 const deleteReactions = (id) =>{
   $.ajax({
     method: "DELETE",
-    url: `http://localhost:8080/reactions/${id}`,
+    url: `https://devto-backend-app.herokuapp.com/reactions/${id}`,
     success: (response) => {
       console.log(response);
     },
