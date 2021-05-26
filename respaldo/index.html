@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon-32x32.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <title>DEV Community 👩‍💻👨‍💻</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Four-card-feature-section</title>
+</head>
+
+<body>
+
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- HEADER SECTION -->
+      <header class="col-12 bg-white">
+        <nav class="navbar navbar-light">
+          <div class="menu-left col-6">
+            <!-- Menu Hamburguesa -->
+            <button class="navbar-toggler  d-sm-block d-md-none mr-3" type="button" data-toggle="collapse"
+              data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="navbar-nav">
+                <div class="title">
+                  <h2>DEV Community</h2>
+                  <button class="navbar-toggler close-button" type="button" data-toggle="collapse"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="">X</span>
+                  </button>
+                </div>
+
+                <ul>
+                  <li class="nav-item active"><a href=""><img src="images/sidebar/ico1.png" /> Home <span
+                        class="sr-only">(current)</span></a></li>
+                  <li class="nav-item"><a href=""><img src="images/sidebar/ico2.png" /> Reading List</a></li>
+                  <li class="nav-item"><a href=""><img src="images/sidebar/ico3.png" /> Listings</a></li>
+                  <li class="nav-item"><a href=""><img src="images/sidebar/ico4.png" /> Podcasts</a></li>
+                  <li class="nav-item"><a href=""><img src="images/sidebar/ico5.png" /> Videos</a></li>
+                  <li class="nav-item"><a href=""><img src="images/sidebar/ico6.png" /> Tags</a></li>
+                  <li class="nav-item"><a href="">More...</a></li>
+                </ul>
+
+              </div>
+            </div>
+            <!-- Logo -->
+            <a href="index.html"><img class="logo" src="images/dev-black.png" /></a>
+            <!-- Search -->
+            <form class="form-inline my-2 my-lg-0 search">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+
+          <div class="menu-right col-6 col-lg-4 offset-lg-2">
+            <button class="btn button-post">Write a post</button>
+            <img class="ico-search" src="images/single/icon-search.svg" alt="" srcset="" />
+            <img src="images/single/icon-connect.svg" alt="" srcset="" />
+            <img src="images/single/icon-notification.svg" alt="" srcset="" />
+            <img class="ico-profile" src="images/single/photo-profile.jpeg" alt="" srcset="" />
+          </div>
+        </nav>
+      </header>
+
+      <div class="cont-wrapp">
+
+        <section id="left-side" class="d-none d-md-block col-md-4 col-lg-3">
+          <!--LEFT SIDE-->
+          <div class="collapse navbar-collapse d-md-block" id="navbarNav2">
+            <div class="navbar-nav">
+              <ul>
+                <li class="nav-item active"><a href=""><img src="images/sidebar/ico1.png" /> Home <span
+                      class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a href=""><img src="images/sidebar/ico2.png" /> Reading List</a></li>
+                <li class="nav-item"><a href=""><img src="images/sidebar/ico3.png" /> Listings</a></li>
+                <li class="nav-item"><a href=""><img src="images/sidebar/ico4.png" /> Podcasts</a></li>
+                <li class="nav-item"><a href=""><img src="images/sidebar/ico5.png" /> Videos</a></li>
+                <li class="nav-item"><a href=""><img src="images/sidebar/ico6.png" /> Tags</a></li>
+                <li class="nav-item"><a href="">More...</a></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="side-banner">
+            <img style="width: 100%;" src="images/content/banner-side-2.jpg" alt="" srcset="">
+            <h2>New Champion-Brand DEV Wear is Here!</h2>
+          </div>
+          <!--END LEFT SIDE-->
+        </section>
+        <section class="col-12 col-md-8 col-lg-6 bg-fondo" id="post-list">
+          <!--<section id="post-list" class="post-wrapper">-->
+          <div class="row">
+            <!--POST-->
+            <div class="col-12 pb-1 pt-3 px-md-0">
+              <div class="section-title d-flex justify-content-between align-items-center pt-3">
+                <div>
+                  <h1>Posts</h1>
+                </div>
+                <div class="filter-desktop d-none d-md-block">
+                  <!--filter-desktop-->
+                  <ul class="nav justify-content-end">
+                    <li class="nav-item rounded">
+                      <a class="nav-link  active" href="#">Feed</a>
+                    </li>
+                    <li class="nav-item rounded">
+                      <a class="nav-link" href="#">Week</a>
+                    </li>
+                    <li class="nav-item rounded">
+                      <a class="nav-link" href="#">Month</a>
+                    </li>
+                    <li class="nav-item rounded">
+                      <a class="nav-link" href="#">Year</a>
+                    </li>
+                    <li class="nav-item rounded">
+                      <a class="nav-link" href="#">Infinity</a>
+                    </li>
+                    <li class="nav-item rounded">
+                      <a class="nav-link" href="#">Latest</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-md-none filter-movil">
+                  <!--filter-movil-->
+                  <select id="feed-filter-select" class="p-2 rounded" aria-label="feed-filter-select">
+                    <option value="" selected="">Feed</option>
+                    <option value="/top/week">Week</option>
+                    <option value="/top/month">Month</option>
+                    <option value="/top/year">Year</option>
+                    <option value="/top/infinity">Infinity</option>
+                    <option value="/latest">Latest</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-12  p-0">
+              <article class="card mb-3">
+                <img src="images/single/photo-main.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="autor">
+                    <img class="rounded-circle border border-secondary ico-profile"
+                      src="images/single/photo-profile.jpeg" />
+                    <div class="autor-name">
+                      <div>Laurie</div>
+                      <div>Mar 8 (2 hours ago)</div>
+                    </div>
+                  </div>
+                  <div>
+                    <h2 class="card-title feature">
+                      <a href="post.html">Diagnosing Performance Issues 💻</a>
+                    </h2>
+                  </div>
+                  <div class="tags">
+                    <a href="#"><span>#</span>beginners</a>
+                    <a href="#"><span>#</span>productivity</a>
+                    <a href="#"><span>#</span>javascript</a>
+                    <a href="#"><span>#</span>webdev</a>
+                  </div>
+                  <div class="reacts">
+                    <div class="react-left">
+                      <a href="#">
+                        <img src="images/single/reaction-heart.svg" />
+                        <span> 10 </span><span class="react-text"> &nbsp;reactions</span>
+                      </a>
+                      <a href="#">
+                        <img src="images/single/comentario.svg" />
+                        <span> 2 </span><span class="react-text"> &nbsp;comments</span>
+                      </a>
+                    </div>
+                    <div class="react-right">
+                      <span>4 min read</span>
+                      <button>Save</button>
+
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card mb-3">
+                <div class="card-body">
+                  <div class="autor">
+                    <img class="rounded-circle border border-secondary ico-profile" src="images/single/user3.webp" />
+                    <div class="autor-name">
+                      <div>George Lucas</div>
+                      <div>Mar 7 (23 hours ago)</div>
+                    </div>
+                  </div>
+                  <div>
+                    <h2 class="card-title">
+                      <a href="#">Embracing risk and uncertainty: how I became an Indie Hacker</a>
+                    </h2>
+                  </div>
+                  <div class="tags">
+                    <a href="#"><span>#</span>startup</a>
+                    <a href="#"><span>#</span>indiehacker</a>
+                  </div>
+                  <div class="reacts">
+                    <div class="react-left">
+                      <a href="#">
+                        <img src="images/single/reaction-heart.svg" />
+                        <span> 13 </span><span class="react-text"> &nbsp;reactions</span>
+                      </a>
+                      <a href="#">
+                        <img src="images/single/comentario.svg" />
+                        <span> 28 </span><span class="react-text"> &nbsp;comments</span>
+                      </a>
+                    </div>
+
+                    <div class="react-right">
+                      <span>9 min read</span>
+                      <button>Save</button>
+
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card mb-3">
+                <div class="card-body">
+                  <div class="autor">
+                    <img class="rounded-circle border border-secondary ico-profile" src="images/single/user2.webp" />
+                    <div class="autor-name">
+                      <div>Katherine Peterson</div>
+                      <div>Mar 7 (19 hours ago)</div>
+                    </div>
+                  </div>
+                  <div>
+                    <h2>
+                      <a href="#">Best design 🎨 resources websites every developer should bookmark🔖</a>
+                    </h2>
+                  </div>
+                  <div class="tags">
+                    <a href="#"><span>#</span>design</a>
+                    <a href="#"><span>#</span>css</a>
+                    <a href="#"><span>#</span>javascript</a>
+                  </div>
+                  <div class="reacts">
+                    <div class="react-left">
+                      <a href="#">
+                        <img src="images/single/reaction-heart.svg" />
+                        <span> 91 </span><span class="react-text"> &nbsp;reactions</span>
+                      </a>
+                      <a href="#">
+                        <img src="images/single/comentario.svg" />
+                        <span> 14 </span><span class="react-text"> &nbsp;comments</span>
+                      </a>
+                    </div>
+
+                    <div class="react-right">
+                      <span>5 min read</span>
+                      <button>Save</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card mb-3">
+                <div class="card-body">
+                  <div class="autor">
+                    <img class="rounded-circle border border-secondary ico-profile" src="images/single/user4.webp" />
+                    <div class="autor-name">
+                      <div>Troy McClure</div>
+                      <div>Mar 5 </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h2>
+                      <a href="#">Object Oriented JavaScript</a>
+                    </h2>
+                  </div>
+                  <div class="tags">
+                    <a href="#"><span>#</span>javascript</a>
+                    <a href="#"><span>#</span>webdev</a>
+                  </div>
+                  <div class="reacts">
+                    <div class="react-left">
+                      <a href="#">
+                        <img src="images/single/reaction-heart.svg" />
+                        <span> 15 </span><span class="react-text"> &nbsp;reactions</span>
+                      </a>
+                      <a href="#">
+                        <img src="images/single/comentario.svg" />
+                        <span> 32 </span><span class="react-text"> &nbsp;comments</span>
+                      </a>
+                    </div>
+
+                    <div class="react-right">
+                      <span>20 min read</span>
+                      <button>Save</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card mb-3">
+                <div class="card-body">
+                  <div class="autor">
+                    <img class="rounded-circle border border-secondary ico-profile" src="images/single/user2.webp" />
+                    <div class="autor-name">
+                      <div>Johnny Lawrence</div>
+                      <div>Mar 5 </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h2>
+                      <a href="#">🚀10 Trending projects on GitHub for web developers - 5th March 2021</a>
+                    </h2>
+                  </div>
+                  <div class="tags">
+                    <a href="#"><span>#</span>css</a>
+                    <a href="#"><span>#</span>javascript</a>
+                    <a href="#"><span>#</span>react</a>
+                  </div>
+                  <div class="reacts">
+                    <div class="react-left">
+                      <a href="#">
+                        <img src="images/single/reaction-heart.svg" />
+                        <span> 21 </span><span class="react-text"> &nbsp;reactions</span>
+                      </a>
+                      <a href="#">
+                        <img src="images/single/comentario.svg" />
+                        <span> 5 </span><span class="react-text"> &nbsp;comments</span>
+                      </a>
+                    </div>
+
+                    <div class="react-right">
+                      <span>5 min read</span>
+                      <button>Save</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card mb-3">
+                <div class="card-body">
+                  <div class="autor">
+                    <img class="rounded-circle border border-secondary ico-profile" src="images/single/user5.webp" />
+                    <div class="autor-name">
+                      <div>Axl Rose</div>
+                      <div>Mar 4</div>
+                    </div>
+                  </div>
+                  <div>
+                    <h2>
+                      <a href="#">Music for coding: 50 Spotify playlists for developers 🎧</a>
+                    </h2>
+                  </div>
+                  <div class="tags">
+                    <a href="#"><span>#</span>code</a>
+                    <a href="#"><span>#</span>music</a>
+                  </div>
+                  <div class="reacts">
+                    <div class="react-left">
+                      <a href="#">
+                        <img src="images/single/reaction-heart.svg" />
+                        <span> 41 </span><span class="react-text"> &nbsp;reactions</span>
+                      </a>
+                      <a href="#">
+                        <img src="images/single/comentario.svg" />
+                        <span> 7 </span><span class="react-text"> &nbsp;comments</span>
+                      </a>
+                    </div>
+
+                    <div class="react-right">
+                      <span>59 min read</span>
+                      <button>Save</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!--</section>-->
+
+            </div>
+          </div>
+        </section>
+
+        <section class="col-lg-3 d-none d-lg-block p-3">
+          <!--RIGHT SIDE-->
+          <div class="card card-side-right mt-3 bg-white1">
+            <img src="images/single/image_side_right.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold bg-white1">Stories(122)</h5>
+              <p class="card-text">
+              </p>
+            </div>
+            <ul class="list-group list-group-flush ">
+              <li class="list-group-item ">SheCoded 2021 — Stories From Women Building Software and the Allies
+                Supporting
+                Them</li>
+              <li class="list-group-item ">Happy International Women's Day to the Women Building Online
+                Community 💖
+              </li>
+              <li class="list-group-item ">Nevertheless, HomegirlHacker Coded in 2021!</li>
+              <li class="list-group-item ">Nevertheless, Sigute Coded in 2020/2021!</li>
+              <li class="list-group-item ">Resilience is key to my success</li>
+              <li class="list-group-item ">
+
+                <a href="#" class="btn btn-blue btn-lg btn-block">Share Your Story</a>
+                <a href="#" class="btn btn-grey btn-lg btn-block">See all post</a>
+
+
+              </li>
+            </ul>
+          </div>
+          <div class="card card-side-right mt-3 bg-white1">
+            <div class="card-header text-order ">
+              Listings <span>See all</span>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item ">Meet iOS community with informal interviews
+                <h6>misc</h6>
+              </li>
+              <li class="list-group-item ">Frontend Engineer for OSS project
+                <h6>jobs</h6>
+              </li>
+              <li class="list-group-item ">The ultimate compilation of Cheat sheets (200+) - 🎁 / Roadmap to
+                dev 🚀
+                -Free!
+                <h6>collabs</h6>
+              </li>
+              <li class="list-group-item ">[Mar 18th] ⚙️ React x REST API Workshop ⚙️
+                <h6>events</h6>
+              </li>
+              <li class="list-group-item ">Developer Evangelist - Computer Vision & Robotics
+                <h6>jobs</h6>
+              </li>
+            </ul>
+            <div class="card-footer bg-white1 text-center font-weight-bold">
+              Create a Listing
+            </div>
+          </div>
+          <div class="card card-side-right mt-3 ">
+            <div class="card-header font-weight-bold text-profile-from bg-white1">
+              #news
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item ">Game Dev Digest — Issue #84 - Learning, Tips, and Free Courses
+                <h6>3 comments</h6>
+              </li>
+              <li class="list-group-item ">Continuous Feedback for Developers
+                <h6><span class="badge button-new">New</span></h6>
+              </li>
+              <li class="list-group-item ">You can now get voice and video calls with Whatsapp Desktop
+                <h6><span class="badge button-new">New</span></h6>
+              </li>
+              <li class="list-group-item">PyScaffold 4.0 is here 🔥
+                <h6><span class="badge button-new">New</span></h6>
+              </li>
+              <li class="list-group-item">I've Joined Forem as a Principal SRE
+                <h6>3 comments</h6>
+              </li>
+            </ul>
+          </div>
+          <div class="card  card-side-right mt-3">
+            <div class="card-header font-weight-bold text-profile-from">
+              #help
+            </div>
+            <ul class="list-group list-group-flush ">
+              <li class="list-group-item ">Application Design for Multi-Tenancy Apps
+                <h6>3 comments</h6>
+              </li>
+              <li class="list-group-item">Linux from Scratch on WSL2?
+                <h6><span class="badge button-new">New</span></h6>
+              </li>
+              <li class="list-group-item">The Odin Project still worth to go through in 2021?
+                <h6>3 comments</h6>
+              </li>
+              <li class="list-group-item">How to install ImageMagick?
+                <h6>3 comments</h6>
+              </li>
+              <li class="list-group-item">How do I create a Player for a Podcast using RSS Feed?
+                <h6><span class="badge button-new">New</span></h6>
+              </li>
+            </ul>
+            <!--END RIGHT SIDE-->
+          </div>
+      </div>
+      </section>
+
+      <footer class="col-12">
+        <img class="mono" src="images/single/footer-image.png" alt="" srcset="">
+        <div class="footer-wrapper">
+          <div class="footer-menu">
+            <ul>
+              <li>Home </li>
+              <li>Reading List </li>
+              <li>Listings </li>
+              <li>Podcasts </li>
+              <li>Videos </li>
+              <li>Tags </li>
+              <li>Code of Conduct </li>
+              <li>FAQ </li>
+              <li>DEV Shop </li>
+              <li>Sponsors </li>
+              <li>About </li>
+              <li>Privacy </li>
+              <li>Policy </li>
+              <li>Terms of use </li>
+              <li>Contact </li>
+              <li><b>Write a post</b></li>
+            </ul>
+          </div>
+          <div class="footer-redes">
+            <img src="images/single/footer-icon-twitter.svg" alt="" srcset="">
+            <img src="images/single/footer-icon-facebook.svg" alt="" srcset="">
+            <img src="images/single/footer-icon-twitch.svg" alt="" srcset="">
+            <img src="images/single/footer-icon-instagram.svg" alt="" srcset="">
+            <img src="images/single/footer-icon-git.svg" alt="" srcset="">
+          </div>
+          <div class="footer-txt1">
+            <p><b>DEV Community</b> – A constructive and inclusive social network for software developers. With you
+              every step of your journey.</p>
+            <p>Built on <b>Forem</b> — the <b>open source</b> software that powers <b>DEV</b> and other inclusive
+              communities.</p>
+            <p>Made with love and <b>Ruby on Rails</b>. DEV Community © 2016 - 2021.</p>
+            <img src="images/single/footer-plant.svg" alt="" srcset="">
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>
+</body>
+
+</html>

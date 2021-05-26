@@ -1,0 +1,119 @@
+
+  <div id="form-wrapper" class="col-12 col-md-8 w-100 bg-white1 p-3 my-md-4 shadow-sm rounded">
+
+    <form class="m-3 p-3 text-muted" id="form-new-post">
+
+        <h1 class="mb-5 font-weight-bold">
+            Add New Post
+          </h1>
+
+      <div class="form-group">
+        <!-- <label for="image">Agrega imagen de encabezado</label> -->
+        <input id="new-post-image" type="text" placeholder="Add cover image URL here..." class="form-control" name="imgPost" />
+      </div>
+      <div class="form-group">
+        <!-- <label for="title">Titulo del post</label> -->
+        <input id="new-post-title" placeholder="Write title here..." type="text" class="form-control" name="postTitle" />
+      </div>
+      <div class="form-group">
+        <!-- <label for="tags">Agrega tags</label> -->
+        <input id="new-post-tags" placeholder="Add up to 4 tags..." type="text" class="form-control" name="tags" />
+      </div>
+      <div class="form-group">
+        <!-- <label for="content">Agrega contenido:</label> -->
+        <input id="new-post-content" placeholder="Write content here..." type="text" class="h-10 form-control" name="contentPost" />
+      </div>
+
+      <button
+        type="button"
+        class="btn btn-primary w-10 mt-3 bg-blue-boton"
+        id="save-new-post"
+      >
+        Publish
+      </button>
+    </form>
+  </div>
+  
+  <div class="col-12 col-md-4 tooltip-wrapper">
+
+    <div  class="tooltip-mod tooltip-image center">
+        <h4 class="mb-2 fs-l">Choose the correct image</h4>
+        <ul class="list-disc pl-6 color-base-70">
+            <li>It’s important to choose an image that’s relevant to — and reflective of — your content. </li>
+            <li>You don’t want to mislead users about what they’ll get when they click, as that can erode brand trust, but you also need to make sure the people who do click are actually interested in the content. </li>
+            <li>The ultimate goal, after all, is to get social traffic that’s qualified.</li>
+        </ul>
+    </div>
+
+    <div  class="tooltip-mod tooltip-title center">
+        <h4 class="mb-2 fs-l">Writing a Great Post Title</h4>
+        <ul class="list-disc pl-6 color-base-70">
+            <li>Think of your post title as a super short (but compelling!) description — like an overview of the actual post in one short sentence.</li>
+            <li>Use keywords where appropriate to help ensure people can find your post by search.</li>
+        </ul>
+    </div>
+
+    <div  class="tooltip-mod tooltip-tags center">
+        <h4 class="mb-2 fs-l">Tagging Guidelines</h4>
+        <ul class="list-disc pl-6 color-base-70">
+            <li>Tags help people find your post.</li>
+            <li>Think of tags as the topics or categories that best describe your post.</li>
+            <li>Add up to four comma-separated tags per post. Combine tags to reach the appropriate subcommunities.</li>
+            <li>Use existing tags whenever possible.</li>
+            <li>Some tags, such as “help” or “healthydebate”, have special posting guidelines.</li>
+        </ul>
+    </div>
+
+    <div  class="tooltip-mod tooltip-content center">
+        <h4 class="mb-2 fs-l">Editor Basics</h4>
+        <ul class="list-disc pl-6 color-base-70">
+            <li>Use Markdown to write and format posts.</li>
+            <li>You can use Liquid tags to add rich content such as Tweets, YouTube videos, etc.</li>
+            <li>In addition to images for the post's content, you can also drag and drop a cover image</li>
+            <li>You can use Liquid tags to add rich content such as Tweets, YouTube videos, etc.</li>
+            <li> In addition to images for the post's content, you can also drag and drop a cover image</li>
+        </ul>
+    </div>
+    
+
+    
+  </div>
+
+
+
+<script>
+
+  //Para agregarle comas a los tags
+  $("#new-post-tags").keyup(function () {
+    var str = this.value.replace(/(\w)[\s,]+(\w?)/g, "$1, $2");
+    if (str != this.value) this.value = str;
+  });
+
+
+  // TOOLTIPS
+  $('#new-post-image').hover(function() {
+    $(".tooltip-image").fadeIn(300);
+  }, function() {
+    $(".tooltip-image").fadeOut(300);
+  })
+
+  $('#new-post-title').hover(function() {
+    $(".tooltip-title").fadeIn(300);
+  }, function() {
+    $(".tooltip-title").fadeOut(300);
+  })
+
+  $('#new-post-tags').hover(function() {
+    $(".tooltip-tags").fadeIn(300);
+  }, function() {
+    $(".tooltip-tags").fadeOut(300);
+  })
+
+  $('#new-post-content').hover(function() {
+    $(".tooltip-content").fadeIn(300);
+  }, function() {
+    $(".tooltip-content").fadeOut(300);
+  })
+
+
+</script>

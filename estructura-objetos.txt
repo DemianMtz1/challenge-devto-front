@@ -1,0 +1,70 @@
+/*DOCUEMNTO DE BASE DE DATOS*/
+
+// ENDPOINT USERS
+// https://ajaxclass-1ca34.firebaseio.com/11g/teamb/users.json
+user:  {
+idUser,
+nickname,
+fullName,
+avatarUrl,
+description,
+work,
+location,
+joined
+}
+
+// ENDPOINT POST
+// https://ajaxclass-1ca34.firebaseio.com/11g/teamb/posts.json
+post: {
+idPost,
+postTitle,
+tags: [],
+imgPost,
+contentPost
+createdDate,
+createdTime
+}
+
+// ENDPOINT REPLIES
+// https://ajaxclass-1ca34.firebaseio.com/11g/teamb/replies.json
+replies: {
+    key-reply-1: {
+        idReply,
+        contentReply,
+        createdDate,
+        createdTime
+        idUser, -> tbd
+        nicknameUser, -> tbd
+        idPost, -> tbd
+    }
+}
+
+// ENDPOINT REACTIONS
+// https://ajaxclass-1ca34.firebaseio.com/11g/teamb/reactions.json
+replies: {
+    key-reaction-1: {
+        idReaction,
+        idPost, ->tbd
+        idUser, ->tbd
+        createdTime
+        
+    }
+}
+
+// Jerarquia
+users -> se necesita tener usuario para poder crear posts y replies
+posts -> cada post que se cree o se revise debera tener su usuario
+replies -> cada comentario debera tener su id de usuario y su id de post
+
+
+/* COMPARACION ANTERIOR-AHORA*/
+
+Index.html -> home.html
+Post -> viewPost.html
+
+
+// NUEVO
+
+newPost.html-newPost.json
+newUser.html
+viewUser.html

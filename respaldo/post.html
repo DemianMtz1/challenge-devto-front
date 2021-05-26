@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/favicon-32x32.png" type="image/gif" sizes="16x16" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <title>DEV Community 👩‍💻👨‍💻</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/interior.css" />
+  <title>Four-card-feature-section</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- HEADER SECTION -->
+      <header class="col-12 bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="menu-left col-6">
+            <!-- Menu Hamburguesa -->
+            <button class="navbar-toggler d-sm-block d-md-none mr-3" type="button" data-toggle="collapse"
+              data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Logo -->
+            <a href="index.html"><img class="logo" src="images/dev-black.png" /></a>
+            <!-- Search -->
+            <form class="form-inline my-2 my-lg-0 search">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            </form>
+          </div>
+
+          <div class="menu-right col-6 col-lg-4 offset-lg-2">
+            <button class="btn button-post">Write a post</button>
+            <img class="ico-search" src="images/single/icon-search.svg" alt="" srcset="" />
+            <img src="images/single/icon-connect.svg" alt="" srcset="" />
+            <img src="images/single/icon-notification.svg" alt="" srcset="" />
+            <img class="ico-profile" src="images/single/photo-profile.jpeg" alt="" srcset="" />
+          </div>
+        </nav>
+      </header>
+
+      <div class="cont-wrapp">
+
+        <section id="left-side" class="d-none d-md-block col-md-1">
+          <!--LEFT SIDE-->
+
+          <ul class="menu-inner-post">
+            <li>
+              <div><img src="images/single/reaction-heart.svg" /></div>
+              2
+            </li>
+            <li>
+              <div><img src="images/single/icon-unicorn.svg" /></div>
+              1
+            </li>
+            <li>
+              <div><img src="images/single/icon-flag.svg" /></div>
+              0
+            </li>
+            <li>
+              <div><img src="images/single/puntitos.svg" /></div>
+            </li>
+          </ul>
+
+          <!--END LEFT SIDE-->
+        </section>
+
+
+
+        <section class="col-12 col-md-11 col-lg-8" id="post-list">
+          <div class="row">
+            <!--POST-->
+            <article class="card mb-3 mt-3">
+              <img src="images/single/photo-main.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+
+                <div>
+                  <h1 class="card-title feature">
+                    <a href="">Diagnosing Performance Issues 💻</a>
+                  </h1>
+                </div>
+
+                <div class="tags" d-inline-flex>
+                  <a href="#"><span>#</span>beginners</a>
+                  <a href="#"><span>#</span>productivity</a>
+                  <a href="#"><span>#</span>javascript</a>
+                  <a href="#"><span>#</span>webdev</a>
+                </div>
+                <div class="autor">
+                  <img class="rounded-circle border border-secondary ico-profile"
+                    src="images/single/photo-profile.jpeg" />
+                  <div class="autor-name">
+                    <div>Laurie</div>
+                    <div>
+                      <time datetime="2021-03-01T14:40:00Z" class="date-no-year"
+                        title="lunes, 1 de marzo de 2021 8:40:00">1 mar</time>
+
+                      <em>
+                        Originally published at
+                        <a href="#" style="color:#1395b8">laurieontech.com</a>
+                      </em>
+
+                      <span class="mr-4">・7 min read</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="article-content">
+                  <p>We've talked about <a href="#">performance tools</a> and <a href="#">web vitals</a>. So you know
+                    how to measure performance and what the metrics are telling you. Now comes the hard part, how do you
+                    improve them?</p>
+
+                  <p>Lighthouse will give you some hints in particular cases, but the more complex your site, the less
+                    helpful those can be. After the baseline optimizations, what's next?</p>
+
+                  <h2>
+                    <a name="the-calculator" href="#the-calculator" class="anchor">
+                    </a>
+                    The calculator
+                  </h2>
+
+                  <p>The first thing to know is that your overall performance score is based on a balance of the three
+                    core web vitals (and some other metrics). In devtools, Lighthouse gives you a calculator that allows
+                    you to adjust these values and see the resulting overall score.</p>
+
+                  <p>To access the calculator run a Lighthouse audit and scroll to the Performance section.</p>
+
+                  <p><a href="#" class=""><img class="w-100 rounded" src="images/single/content-image1.png"
+                        alt="Screenshot showing the link to the calculator in the text under the performance section of the Lighthouse run."
+                        loading="lazy"></a></p>
+
+                  <p>It will open up the calculator so you can start moving metrics around and get an idea of what to
+                    balance in order to improve your performance score.</p>
+
+                  <p><a href="#" class=""><img class="w-100 rounded" src="images/single/content-image2.png"
+                        alt="Screenshot of Lighthouse calculator page." loading="lazy"></a></p>
+
+                  <p>You'll notice in this calculator that some of the metrics have little impact -- something like
+                    speed index for example. Others can only be optimized so much. But it's a great starting point to
+                    help direct you to your biggest performance challenges.</p>
+
+                  <h2>
+                    <a name="recording" href="#recording" class="anchor">
+                    </a>
+                    Recording
+                  </h2>
+
+                  <p>The next thing you want to do is record performance. You can do this in devtools.</p>
+
+                  <p><a href="#" class="article-body-image-wrapper"><img class="w-100 rounded"
+                        src="images/single/content-image3.png"
+                        alt="Performance tab in devtools noting the record button." loading="lazy"></a></p>
+
+                  <p>Some recommendations:</p>
+
+                  <ul>
+                    <li>use incognito mode</li>
+                    <li>use a clean chrome profile</li>
+                    <li>use chrome canary (this will show you core web vitals in your recording)</li>
+                  </ul>
+
+                  <p>After pressing record, be sure to refresh your site to get an example of the page load experience
+                    and the metrics you're looking for.</p>
+
+                  <p><a href="#" class="article-body-image-wrapper "><img class="w-100 rounded"
+                        src="images/single/content-image4.png" alt="Perfomance tab displaying a recording."
+                        loading="lazy"></a></p>
+
+                  <p>Once you've got your recording you can see how the page render changes in milliseconds. You're
+                    going to look for long-running tasks, or tasks that trigger reloads, etc.</p>
+
+                  <h2>
+                    <a name="mitigation" href="#mitigation" class="anchor">
+                    </a>
+                    Mitigation
+                  </h2>
+
+                  <p>Many of the mitigation solutions are issues developers have been focused on for a long time. That's
+                    because, even though the core metrics are newer, the challenges they highlight and index on are the
+                    same.</p>
+
+                  <h3>
+                    <a name="addressing-fid-estimated-using-tbt" href="#addressing-fid-estimated-using-tbt"
+                      class="anchor">
+                    </a>
+                    Addressing FID (estimated using TBT)
+                  </h3>
+
+                  <p>First Input Delay (FID) is a core web vital, but as we explained in the last post, it's often
+                    estimated using Total Blocking Time (TBT), and sometimes Time To Interactive (TTI). So these
+                    mitigation efforts are focused on improving TBT.</p>
+
+                  <h4>
+                    <a name="long-hydration-or-rendering" href="#long-hydration-or-rendering" class="anchor">
+                    </a>
+                    Long hydration or rendering
+                  </h4>
+
+                  <p>This is for all you React users out there! The virtual DOM is a wonderful tool, but it requires
+                    some extra handling when code arrives in the browser. Hydration (or rendering) blocks the main
+                    thread from executing other tasks. Exactly what TBT is designed to estimate and warn you about.</p>
+
+                  <p>So how do you address it? There are options!</p>
+
+                  <p>Lazy load what you can. Is it rendering below the fold? Is it code that will only run when a form
+                    is submitted? Is it code that will only appear when the mobile nav is open? Reduce that code from
+                    your main bundle where you can. I have a post on <a href="#">code splitting</a> if you're curious
+                    about getting started.</p>
+
+                  <p>Make use of things like setTimeout. Do a little bit less and let your browser breathe! Browsers are
+                    smart, if you can stagger what they need to focus on, they'll get the job done.</p>
+
+                  <p>Finally, pay attention to that virtual DOM. Complexity does matter because a more complicated DOM
+                    tree takes longer to hydrate. Excessively nested providers and context for every element on the page
+                    is an anti-pattern.</p>
+
+                  <h4>
+                    <a name="recalc" href="#recalc" class="anchor">
+                    </a>
+                    Re-calc
+                  </h4>
+
+                  <p>Did you see a whole cascade of changes in your recording and notice that there was a very small,
+                    blink and you'll miss it, re-calc block at the start of it? This is a big one because it affects TBT
+                    and has some impact on CLS as well.</p>
+
+                  <p>One of the triggers for re-calc is using code to measure the DOM. Making style changes or creating
+                    new elements hurts performance. However, even reading from the DOM can have an impact, because it's
+                    blocking in the viewport.</p>
+
+                  <p>To address this be mindful of how you make changes. If you're updating CSS it's better to change an
+                    inline style rather than a style block. This makes sense because adjusting an inline style changes a
+                    single element where as a style block change forces the browser to check the entire DOM tree for
+                    potential changes.</p>
+
+                  <p>When it comes to CSS animations, they can be expensive. Ideally, you should only use animation on
+                    opacity changes or transforms. Those CSS properties don't involve layout changes, so it's cheaper.
+                    It's also recommended to use <code>transform3d</code> or <code>willChange</code> instead of
+                    <code>transformX</code> or <code>transformY</code>. Finally, try and avoid modifying <a
+                      href="#">these properties</a> in animations or events. If you're working with a small DOM this
+                    matters less.
+                  </p>
+
+                  <p>Outside of CSS, avoid <a href="#">these JavaScript calls</a>. If you have to use them, do so inside
+                    a <code>requestAnimationFrame</code>. You'll want to use the <code>useLayoutEffect</code> hook to
+                    prevent excessive calls. You'll always want to read then write. And never read and write in the same
+                    request as it will re-calc twice.</p>
+
+                  <p>Finally, make use of <code>requestIdleCallback</code> for anything that doesn't have to be there
+                    for user experience. If it can wait, it should. Whatever is inside a
+                    <code>requestIdleCallback</code> gets called when the browser isn't busy. It's loaded but hidden
+                    until someone interacts with it. This is a great solution for single page apps where you hover over
+                    something. <a href="#">Read this post</a> to learn more.
+                  </p>
+
+                  <h4>
+                    <a name="long-paint-times" href="#long-paint-times" class="anchor">
+                    </a>
+                    Long paint times
+                  </h4>
+
+                  <p>Another impact to TBT is long paint times. This mostly occurs when you have a large and complex
+                    DOM. Note that this is not the same as a large virtual DOM, though one can imply the other.</p>
+
+                  <p>To address this issue simplify your HTML structure. <code>div</code> soup is bad. Also note that
+                    inline SVGs can be expensive! Especially if they're complicated. If you're using an SVG for a small
+                    or otherwise fixed size image, it probably makes sense to convert it to another format.</p>
+
+                  <p>Another way to improve this score is the CSS property <code>content-visibility</code>. However, as
+                    Marcy Sutton notes <a href="#">in her article</a>, use this with caution. Using it on landmarks is
+                    harmful to accessibility.</p>
+
+                  <p>Finally, try to stay away from excessive use of box-shadow or heavy CSS filters. They're expensive
+                    when you have a lot of them.</p>
+
+                  <h3>
+                    <a name="addressing-cls" href="#addressing-cls" class="anchor">
+                    </a>
+                    Addressing CLS
+                  </h3>
+
+                  <p>The next core web vital to handle is Cumulative Layout Shift (CLS). Unlike FID, there aren't a ton
+                    of things that impact this. In fact, other than re-calc, which we mentioned above, there is one main
+                    culprit.</p>
+
+                  <h4>
+                    <a name="relayout" href="#relayout" class="anchor">
+                    </a>
+                    re-layout
+                  </h4>
+
+                  <p>Your CLS is bad when your layout shifts. This can only happen if you're laying your page out more
+                    than once. Many pages do this, but you can limit the number of times it happens and ensure that it
+                    doesn't result in significant visual shifts.</p>
+
+                  <p>Changing styles or inserting elements causes a re-layout. If there is another way to accomplish
+                    what you're trying to do without using those methods, please do!</p>
+
+                  <p>Placeholders are your friend. If you're loading something that takes time to render, like an image,
+                    having an element in the DOM that matches those dimensions can prevent the page from a large layout
+                    shift when it renders.</p>
+
+                  <p>If you're lazy loading a font, try and match it with a system font that is similar. Fonts can cause
+                    significant shifts. It's also good to make use of <a href="#">font swap</a>.</p>
+
+                  <h3>
+                    <a name="addressing-lcp" href="#addressing-lcp" class="anchor">
+                    </a>
+                    Addressing LCP
+                  </h3>
+
+                  <p>The last core web vital is Largest Contentful Paint (LCP). Time to talk about asset optimization!
+                  </p>
+
+                  <h4>
+                    <a name="image-or-font-loads" href="#image-or-font-loads" class="anchor">
+                    </a>
+                    Image or font loads
+                  </h4>
+
+                  <p>Ensuring your images and fonts load performantely is the main way to improve LCP as those assets
+                    are typically the largest on your site.</p>
+
+                  <p>For your main image, load it from your own domain. Loading it from a third party source will often
+                    be slower.</p>
+
+                  <p>For fonts, add a <a href="#">preload tag</a>. Then the browser can optimize this download for you.
+                  </p>
+
+                  <h4>
+                    <a name="downloads-that-block-rendering" href="#downloads-that-block-rendering" class="anchor">
+                    </a>
+                    Downloads that block rendering
+                  </h4>
+
+                  <p>There are also a number of things that can block rendering of these larger assets. Mainly, blocking
+                    scripts, loading stylesheets, and non-async script tags.</p>
+
+                  <p>If you're inlining scripts make sure they're at the bottom of your file. When the browser parses
+                    the DOM, each time it encounters a script, it has to stop and wait for it to run. Putting that
+                    script at the bottom the file ensures the DOM parsing is not blocked.</p>
+
+                  <p>Marking scripts with <a href="#">type <code>module</code></a> also prevents them from blocking
+                    rendering.</p>
+
+                  <p>Finally, make sure your stylesheet is included before any script tags. When the browser finishes
+                    parsing the DOM it needs access to the CSSDOM in order to create the render tree. If it's blocked
+                    from accessing the stylesheet it can't do that, further delaying the page render.</p>
+
+                  <h2>
+                    <a name="and-thats-it" href="#and-thats-it" class="anchor">
+                    </a>
+                    And that's it!
+                  </h2>
+
+                  <p>You're probably thinking, what do you mean "that's it"?!? That was a lot! And you're absolutely
+                    right.</p>
+
+                  <p>It's worth noting that many of these optimizations won't apply to your page. But for the ones that
+                    do, you aren't looking to eliminate every re-calc or prevent the need to download your large assets.
+                    These behaviors are necessary for an awesome, dynamic site. The goal is to minimize their impact on
+                    user experience and handle them in the most performant way.</p>
+                </div>
+
+              </div>
+            </article>
+
+
+            <article class="card p-3 mb-3">
+              <div class="discussion-title d-flex justify-content-between align-items-center mb-3">
+                <h2>Discussion <span>(1)</span> </h2>
+                <button>Suscribe</button>
+              </div>
+              <div class="discussion-body d-flex">
+                <div>
+                  <img class="ico-profile rounded-circle border border-secondary" src="images/single/user3.webp" />
+                </div>
+                <div class="discussion-comment">
+                  <div class="">
+                    <a href="#">
+                      <span>InHuOfficial</span>
+                    </a>
+
+                    <span>•</span>
+
+                    <a href="#">
+                      <time datetime="2021-03-01T17:42:24Z" title="lunes, 1 de marzo de 2021 11:42:24">
+                        Mar 1
+                      </time>
+
+                      • Edited
+                      <span>
+                        on <time datetime="2021-03-01T17:47:50Z" title="lunes, 1 de marzo de 2021 11:47:50">
+                          Mar 1</time>
+                      </span>
+                    </a>
+                  </div>
+
+
+                  <p> great article, this time I made sure I read it properly instead of skim reading so I don't repeat
+                    what you said lol 😋</p>
+
+                  <p>I am intrigued by the "inline SVGs can be expensive", my old site is about as heavy as you can get
+                    on SVG (all inline) and doesn't suffer on initial render even with a 4x CPU slowdown (although all
+                    my floating squares and the "train smoke" do kill performance 🤣), obviously if there is something I
+                    am missing here I would love to know to add it to my bag of "avoid doing this" tricks, is it
+                    particular filters or something that are best avoided? (it could be that because I ran them all
+                    through SVG OMG to optimise them i don't see issues?)</p>
+
+                  </p>The only other thing is to add that when running a performance trace you should set the network to
+                  "Fast 3G" and the CPU to "4x Slowdown" in the settings (cog top right below the "menu 3 dots" to show
+                  settings) in order to catch long running tasks, layout shifts, LCP times etc. that Lighthouse would
+                  pick up for mobile audits as those are pretty similar to the settings Lighthouse uses to throttle your
+                  connection and CPU for the mobile test).</p>
+                </div>
+              </div>
+              <div class="reacts pl-5">
+                <div class="react-left">
+                  <a href="#">
+                    <img src="images/single/reaction-heart.svg" />
+                    <span> 10 </span><span class="react-text"> &nbsp;likes</span>
+                  </a>
+                  <a href="#">
+                    <img src="images/single/comentario.svg" />
+                    <span></span><span class="react-text"> &nbsp;Reply</span>
+                  </a>
+                </div>
+                <div class="react-right">
+
+                </div>
+              </div>
+              <div class="code-conduct d-flex justify-content-center">
+                <a href="#" class="">Code of Conduct</a>
+                <span class="" role="presentation">•</span>
+                <a href="" class="">Report abuse</a>
+              </div>
+            </article>
+            <article class="card mb-3 w-100">
+              <div class="card-body">
+                <h2 class="card-title pl-4">Read next</h2>
+                <div class="list-next pl-4">
+                  <a href="#">
+
+                    <div class="next-article d-flex align-items-center">
+
+                      <img class="ico-profile rounded-circle border border-secondary" loading="lazy"
+                        alt="kauresss profile image" src="images/single/user6.webp" />
+
+                      <div class="d-flex flex-column justify-content-center ">
+                        <h4>Getting paid less to do the same work on Upwork</h4>
+                        <p>
+                          Kauress - <time datetime="2021-03-06T00:21:07Z">Mar 6</time>
+                        </p>
+                      </div>
+                    </div>
+
+                  </a>
+                  <a href="#">
+                    <div class="next-article d-flex align-items-center">
+                      <span>
+                        <img class="ico-profile rounded-circle border border-secondary" loading="lazy"
+                          alt="bekbrace profile image" src="images/single/user7.webp" />
+                      </span>
+                      <div class="d-flex flex-column justify-content-center">
+                        <h4>Stripe for online payments</h4>
+                        <p>
+                          Bek Brace - <time datetime="2021-03-05T17:46:15Z">Mar 5</time>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="next-article d-flex align-items-center">
+
+                      <img class="ico-profile rounded-circle border border-secondary" loading="lazy"
+                        alt="jackssonandrey profile image" src="images/single/user8.webp" />
+
+                      <div class="d-flex flex-column justify-content-center">
+                        <h4>Usando Docker e docker-composer no dia a dia</h4>
+                        <p>
+                          Andrey Araújo - <time datetime="2021-03-05T22:40:24Z">Mar 5</time>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="next-article d-flex align-items-center ">
+
+                      <img class="ico-profile rounded-circle border border-secondary" loading="lazy"
+                        alt="ilizette profile image" class="crayons-avatar__image" src="images/single/user9.webp" />
+
+                      <div class="d-flex flex-column justify-content-center">
+                        <h4>Understanding useReducer in react</h4>
+                        <p>
+                          Elizabeth - <time datetime="2021-03-05T19:14:27Z">Mar 5</time>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="col-lg-3 d-none d-lg-block p-3 overflow-auto sticky-top right-side-sticky">
+          <!--RIGHT SIDE-->
+          <div class="card bg-white1">
+            <h5 class="card-header profile p-3"></h5>
+            <div class="card-body">
+              <div>
+                <img class="rounded-circle ico-profile2" src="/images/single/photo-profile.jpeg">
+                <span class="text-center font-weight-bold text-profile">Laurie</span>
+
+              </div>
+
+              <p class="card-text">Software dev at Gatsby | DC techie | Conference speaker | egghead Instructor | TC39
+                Educators Committee | Girls Who Code
+                Facilitator | Board game geek | @laurieontech on twitter</p>
+              <a href="#" class="btn btn-blue btn-lg btn-block">Follow</a>
+              <div class="pt-2">
+                <span class=" card-title-sec">WORK</span><br />
+                Full Stack Dev
+              </div>
+              <div class="pt-2">
+                <span class=" card-title-sec">LOCATION</span><br />
+                Kansas City
+              </div>
+              <div class="pt-2">
+                <span class=" card-title-sec">JOINED</span><br />
+                4 feb 2021
+              </div>
+
+            </div>
+          </div>
+          <div class="card card-side-right bg-white mt-3">
+            <div class="card-header bg-white1 font-weight-bold text-profile-from">
+              More from <span class="font-blue">Laurie</span>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">How to write a great blog post on dev.to: A guide for beginners!
+                <h6 class="tags">#beginners #codenewbie #writing #productivity</h6>
+              </li>
+              <li class="list-group-item">Microservices in 4 minutes - Introduction to Microservices
+                <h6>#webdev #career #beginners</h6>
+              </li>
+              <li class="list-group-item">Search Stack Overflow, docs, and code on GitHub from a single app
+                <h6>#productivity #programming #showdev</h6>
+              </li>
+            </ul>
+          </div>
+          <!--END RIGHT SIDE-->
+        </section>
+      </div>
+
+      <footer class="col-12">
+        <img class="mono" src="images/single/footer-image.png" alt="" srcset="" />
+        <div class="footer-wrapper">
+          <div class="footer-menu">
+            <ul>
+              <li>Home</li>
+              <li>Reading List</li>
+              <li>Listings</li>
+              <li>Podcasts</li>
+              <li>Videos</li>
+              <li>Tags</li>
+              <li>Code of Conduct</li>
+              <li>FAQ</li>
+              <li>DEV Shop</li>
+              <li>Sponsors</li>
+              <li>About</li>
+              <li>Privacy</li>
+              <li>Policy</li>
+              <li>Terms of use</li>
+              <li>Contact</li>
+              <li><b>Write a post</b></li>
+            </ul>
+          </div>
+          <div class="footer-redes">
+            <img src="images/single/footer-icon-twitter.svg" alt="" srcset="" />
+            <img src="images/single/footer-icon-facebook.svg" alt="" srcset="" />
+            <img src="images/single/footer-icon-twitch.svg" alt="" srcset="" />
+            <img src="images/single/footer-icon-instagram.svg" alt="" srcset="" />
+            <img src="images/single/footer-icon-git.svg" alt="" srcset="" />
+          </div>
+          <div class="footer-txt1">
+            <p>
+              <b>DEV Community</b> – A constructive and inclusive social
+              network for software developers. With you every step of your
+              journey.
+            </p>
+            <p>
+              Built on <b>Forem</b> — the <b>open source</b> software that
+              powers <b>DEV</b> and other inclusive communities.
+            </p>
+            <p>
+              Made with love and <b>Ruby on Rails</b>. DEV Community © 2016 -
+              2021.
+            </p>
+            <img src="images/single/footer-plant.svg" alt="" srcset="" />
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

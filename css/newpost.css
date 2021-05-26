@@ -1,0 +1,86 @@
+#form-new-post input {
+  padding-left: 0;
+  background: transparent;
+  border: 0px;
+}
+
+#form-new-post input:focus {
+  border-color: #ced4da;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#form-new-post input::-webkit-input-placeholder {
+  color: #ACB2B9;
+}
+
+#form-new-post input:-ms-input-placeholder {
+  color: #ACB2B9;
+}
+
+#form-new-post input::-ms-input-placeholder {
+  color: #ACB2B9;
+}
+
+#form-new-post input::placeholder {
+  color: #ACB2B9;
+}
+
+#form-new-post input#new-post-title {
+  font-size: 2em;
+  font-weight: bold;
+  background: transparent;
+  border: 0px;
+}
+
+#form-new-post input#new-post-title:focus {
+  border-color: #ced4da;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#form-new-post input#new-post-title::-webkit-input-placeholder {
+  color: #ACB2B9;
+}
+
+#form-new-post input#new-post-title:-ms-input-placeholder {
+  color: #ACB2B9;
+}
+
+#form-new-post input#new-post-title::-ms-input-placeholder {
+  color: #ACB2B9;
+}
+
+#form-new-post input#new-post-title::placeholder {
+  color: #ACB2B9;
+}
+
+#form-new-post input#new-post-content {
+  height: auto;
+  min-height: 10px;
+  overflow: auto;
+  word-break: break-word;
+}
+
+.tooltip-wrapper {
+  position: relative;
+}
+
+.tooltip-wrapper .tooltip-mod {
+  display: none;
+  position: absolute;
+  padding-top: 6em;
+  margin: 0 0 12px 0;
+}
+
+.tooltip-wrapper .tooltip-mod h4 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.tooltip-wrapper .tooltip-mod ul {
+  list-style: none;
+  padding: 0;
+  font-weight: normal;
+}
+/*# sourceMappingURL=newpost.css.map */

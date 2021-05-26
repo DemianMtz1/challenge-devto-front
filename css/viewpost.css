@@ -1,0 +1,43 @@
+#discussions .profile-pic {
+  width: 32px;
+  height: 32px;
+}
+
+#discussions .reply-input {
+  background-color: #F9FAFA;
+  border: 1px solid;
+  padding: 1em;
+}
+
+#discussions .reply-input:focus {
+  border-color: #ced4da;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#discussions button {
+  margin: 0 0 0 40px;
+}
+
+#read-next {
+  background: #F9FAFA;
+}
+
+#read-next h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#read-next .next-article {
+  padding: 8px 0;
+}
+
+#read-next .next-article h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#read-next .next-article p {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=viewpost.css.map */

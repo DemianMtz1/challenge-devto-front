@@ -1,0 +1,43 @@
+
+#discussions{
+    .profile-pic{
+        width: 32px;
+        height: 32px;
+    }
+
+    .reply-input{
+        &:focus{
+            border-color: #ced4da;
+            box-shadow: none;
+        }
+        background-color: #F9FAFA;
+        border: 1px solid;
+        padding: 1em;
+    }  
+
+    button{
+        margin: 0 0 0 40px;
+    }
+}
+
+#read-next{
+    background: #F9FAFA;
+    h2{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .next-article{
+        padding: 8px 0;
+        h4{
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+
+    }
+
+}
+
+

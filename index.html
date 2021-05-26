@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="images/favicon-32x32.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <title>DEV Community 👩‍💻👨‍💻</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/interior.css" />
+    <link rel="stylesheet" href="css/newpost.css" />
+    <link rel="stylesheet" href="css/viewpost.css" />
+    <title>Four-card-feature-section</title>
+  </head>
+  <body class="bg-fondo">      
+        <!-- HEADER SECTION -->
+        <header class="w-100 bg-light">
+          <nav class="navbar navbar-light">
+            <div class="menu-left col-6">
+              <!-- Menu Hamburguesa -->
+              <!-- funcionalidad en jquery-->
+              <button
+                class="navbar-toggler d-sm-block d-md-none"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                  <div class="title">
+                    <h2>DEV Community</h2>
+                    <button
+                      class="navbar-toggler close-button"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarNav"
+                      aria-controls="navbarNav"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="">X</span>
+                    </button>
+                  </div>
+
+                  <ul>
+                    <li class="nav-item active">
+                      <a href=""
+                        ><img src="images/sidebar/ico1.png" /> Home
+                        <span class="sr-only">(current)</span></a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href=""
+                        ><img src="images/sidebar/ico2.png" /> Reading List</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href=""
+                        ><img src="images/sidebar/ico3.png" /> Listings</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href=""
+                        ><img src="images/sidebar/ico4.png" /> Podcasts</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href=""
+                        ><img src="images/sidebar/ico5.png" /> Videos</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href=""><img src="images/sidebar/ico6.png" /> Tags</a>
+                    </li>
+                    <li class="nav-item"><a href="">More...</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Logo -->
+              <a
+              ><img data-view="home" id="nav-home" class="logo" src="images/dev-black.png"
+              /></a>
+              <!-- Search -->
+              <form id="filter-regex" class="form-inline my-2 my-lg-0 search">
+                <!--FUNCIONALIDAD JQUERY-->
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </form>
+            </div>
+
+            <div class="menu-right col-6 col-lg-4 offset-lg-2">
+              <button id="post-btn-nav" class="btn button-post" data-view="newPost">
+                  Write a post
+              </button>
+          
+              <img class="ico-search" src="images/single/icon-search.svg" alt="" srcset="" />
+          
+              <img src="images/single/icon-connect.svg" alt="" srcset="" />
+          
+              <img src="images/single/icon-notification.svg" alt="" />
+          
+              <div class="dropdown dropdown-left d-flex align-items-center">
+
+                  <a id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span>
+                          <img id="user-dropdown-pic" alt="" style="width: 40px; height: 40px;" class="ml-3 mr-md-0" />
+                      </span>
+                  </a>
+
+                  <div id="menu-wrapper" class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenu2">
+                      <div id="users-item-wrapper" class="users-dropdown-wrapper dropdown-item py-3"></div>
+                      <a href="#" id="change-user-nav" class="dropdown-item py-2">Change User</a>
+                      <!--Podriamos cambiar de usuario con un modal-->
+                      <a href="#" id="create-user-nav" class="dropdown-item new-view py-2" data-view="newUser">Create user</a>
+                      <!-- Podriamos agregar un usuario en una nueva pantalla-->
+                      <a href="#" id="write-post-nav" class="dropdown-item new-view py-2" data-view="newPost">Write a post</a>
+                      <!--Podria mostrar la informacion del usuario-->
+                      <a href="#" id="write-post-nav" class="dropdown-item new-view py-2" data-view="viewUser">Settings</a>
+                      <hr />
+                      <a href="#" class="dropdown-item py-2" data-view="home">Sign Out</a>
+                  </div>
+              </div>
+
+          </div>
+          
+        </nav>
+      </header>
+
+        <div class="container container-fluid" style="min-height: 60vh;">
+          <div class="cont-wrapp row" >
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="w-100">
+      <img class="mono" src="images/single/footer-image.png" alt="" srcset="" />
+      <div class="footer-wrapper">
+        <div class="footer-menu">
+          <ul>
+            <li>Home</li>
+            <li>Reading List</li>
+            <li>Listings</li>
+            <li>Podcasts</li>
+            <li>Videos</li>
+            <li>Tags</li>
+            <li>Code of Conduct</li>
+            <li>FAQ</li>
+            <li>DEV Shop</li>
+            <li>Sponsors</li>
+            <li>About</li>
+            <li>Privacy</li>
+            <li>Policy</li>
+            <li>Terms of use</li>
+            <li>Contact</li>
+            <li><b>Write a post</b></li>
+          </ul>
+        </div>
+        <div class="footer-redes">
+          <img src="images/single/footer-icon-twitter.svg" alt="" srcset="" />
+          <img src="images/single/footer-icon-facebook.svg" alt="" srcset="" />
+          <img src="images/single/footer-icon-twitch.svg" alt="" srcset="" />
+          <img src="images/single/footer-icon-instagram.svg" alt="" srcset="" />
+          <img src="images/single/footer-icon-git.svg" alt="" srcset="" />
+        </div>
+        <div class="footer-txt1">
+          <p>
+            <b>DEV Community</b> – A constructive and inclusive social network
+            for software developers. With you every step of your journey.
+          </p>
+          <p>
+            Built on <b>Forem</b> — the <b>open source</b> software that powers
+            <b>DEV</b> and other inclusive communities.
+          </p>
+          <p>
+            Made with love and <b>Ruby on Rails</b>. DEV Community © 2016 -
+            2021.
+          </p>
+          <img src="images/single/footer-plant.svg" alt="" srcset="" />
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </footer>
+
+
+    <div id="myModal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Selecciona tu usuario</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <select id="users-selector" class="custom-select">
+              
+
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/metodosHttp.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/detailsUsers.js"></script>
+  </body>
+</html>
